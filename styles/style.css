@@ -12,7 +12,8 @@
 
 .header__links-list {
   display: flex;
-  gap: 30px;
+  gap: 33px;
+  line-height: 100%;
 }
 
 .header__links-list-item {
@@ -36,6 +37,8 @@
 
 .header__logo {
   display: block;
+  width: 148px;
+  height: 105px;
 }
 
 .header__logo-image {
@@ -50,5 +53,10 @@
 .header__address {
   justify-self: end;
   max-width: 240px;
-  line-height: 24.3px;
+  line-height: 23px;
 }
+
+.header__address-text {
+  font-size: 18px;
+}
+
