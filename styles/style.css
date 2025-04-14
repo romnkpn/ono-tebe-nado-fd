@@ -1,10 +1,13 @@
-/* место для вашего кода */
+/* Шапка */
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px 50px;
 }
+
+/* Навигация */
 
 .header__menu {
 
@@ -26,7 +29,6 @@
 
 .header__link {
   border-bottom: 1px solid black;
-  font-weight: 400;
   font-size: 18px;
   text-decoration: none;
 }
@@ -34,6 +36,8 @@
 .header__link_active {
   border: none;
 }
+
+/* Логотип */
 
 .header__logo {
   display: block;
@@ -45,6 +49,8 @@
   width: 148px;
   height: 105px;
 }
+
+/* Адрес */
 
 .address {
   font-style: normal;
@@ -60,3 +66,72 @@
   font-size: 18px;
 }
 
+/* Обложка страницы */
+
+.cover {
+  position: relative;
+  z-index: -2;
+  padding: 165px 50px 50px 50px;
+  color: #fff;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  padding-bottom: 106px;
+  font-size: 100px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.aligned-text, .aligned-text_center, .aligned-text_right {
+  display: block;
+}
+
+.aligned-text {
+
+}
+
+.aligned-text_center {
+  margin-left: 30px;
+  padding: 17px 0;
+  text-align: center;
+}
+
+.aligned-text_right {
+  margin-right: -30px;
+  text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px 11px 31px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
