@@ -74,7 +74,6 @@
   padding: 165px 50px 50px 50px;
   color: #fff;
   background-image: url(../images/cover.jpg);
-  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -96,7 +95,9 @@
   text-transform: uppercase;
 }
 
-.aligned-text, .aligned-text_center, .aligned-text_right {
+.aligned-text,
+.aligned-text_center,
+.aligned-text_right {
   display: block;
 }
 
@@ -124,7 +125,7 @@
 .cover__description-text {
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 0.85em;
 }
 
 .bet-button {
@@ -134,4 +135,196 @@
   font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+}
+
+/* Карточки */
+
+.lots {
+  margin: 180px 24px 120px 24px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px; 
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+  list-style: none;
+}
+
+.card-link {
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 48px 40px;
+}
+
+.card__title {
+  font-size: 22px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  font-size: 20px;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_type_film,
+.card_type_book,
+.card_type_picture {
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+}
+
+.lots__look-more-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 40px;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+/* Об аукционе */
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px;
+  padding-top: 33px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.about__column {
+  display: flex;
+  justify-content: center;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  margin-top: 101px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  font-size: 20px;
+  text-wrap: balance;
+}
+
+.about__text-margin {
+  margin-bottom: 24px;
+}
+
+/* Подвал */
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center
+}
+
+.footer__address {
+
+}
+
+.footer__link {
+
+}
+
+.footer__address-text {
+
+}
+
+.footer__menu {
+  text-align: center;
+}
+
+.footer__menu-list {
+
+}
+
+.footer__menu-list-item {
+
+}
+
+.footer__menu-link {
+
+}
+
+.footer__menu-link_active {
+
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 48px;
+}
+
+.footer__social-list-item {
+
+}
+
+.footer__social-link {
+
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__menu-list-item,
+.footer__social-list-item {
+  list-style: none;
 }
